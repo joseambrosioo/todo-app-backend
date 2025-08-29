@@ -1,0 +1,38 @@
+{
+  "name": "todo-app-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Todo App",
+  "main": "server/index.ts",
+  "scripts": {
+    "dev": "ts-node server/index.ts",
+    "build": "tsc",
+    "start": "node dist/server/index.js",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "@prisma/client": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "node-fetch": "latest",
+    "zod": "3.25.67"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22",
+    "prisma": "latest",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "keywords": [
+    "todo",
+    "api",
+    "express",
+    "prisma"
+  ],
+  "author": "",
+  "license": "MIT"
+}
